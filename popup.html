@@ -5,62 +5,354 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="material.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" integrity="sha256-oTyWrNiP6Qftu4vs2g0RPCKr3g1a6QTlITNgoebxRc4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
     <style type="text/css">
     body {
-        width: 800px;
-        height: 600px;
-        background-color: #353942;
-        color: white;
+    width: 800px;
+    height: 600px;
+    color: white;
+    background-color: #353942;
+}
+    .nav-wrapper
+    {
+
+        background-color:#353942; 
+       /* #F31B44;*/
     }
+    html{
+        font-family: Arial;
+    }
+    table {
+    width: 100%;
+    display: table;
+    margin-left: 2%;
+}
+li a
+    {
+        color:white;
+    }
+    /*tr:hover
+    {
+        background-color: grey;
+        box-shadow: 0 27px 24px 0 rgba(0,0,0,0.8),0 40px 77px 0 rgba(0,0,0,0.22);
+    }*/
+   /* tr:hover td {
+    -moz-box-shadow: 0 4px 2px -3px blue inset;
+    -webkit-box-shadow: 0 4px 2px -3px blue inset;
+    box-shadow: 0 4px 2px -3px blue inset;
+}*/
+    /*tr:hover  {
+    -moz-box-shadow: 2px 4px 2px 0 rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 4px 2px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 4px 2px 0 rgba(0, 0, 0, 2.8);
+    }*/
+    /*tr:hover td {
+    -moz-box-shadow: 0 8px 6px -6px grey;
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+     box-shadow: 0 8px 6px -6px grey;
+    }*/
+    tr:hover td {
+    -moz-box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.5) inset;
+    color:black;
+    }
+    
+    .leftalign
+    {
+        text-align: left;
+        color:#349BB9;
+    }
+    .rightalign
+    {
+        text-align: right;
+    }
+    h3
+    {
+        color:#349BB9;
+        text-align: center;
+    }
+    .heading {
+    color: white;
+    text-align: center;
+    }
+    h4 {
+    text-align: center;
+    margin-left: 5%;
+    /*margin-top: 7%;*/
+    }
+
+    ul ,li
+    {
+        text-decoration: none;
+    }
+    nav ul a {
+    /*transition: background-color .3s;*/
+    font-size: 1rem;
+    color: black;
+    display: inline-block;
+    padding: 0 15px;
+    /*cursor: pointer;*/
+    text-decoration: none;
+    }
+    li a {
+    color: black;
+    float: right;
+    margin-right: -18%;
+    text-decoration: none;
+    }
+    #apx
+    {
+        margin-right: -8%;
+        color:white;
+    }
+    #vfid
+    {
+        margin-top: 0;
+    }
+    li a:link
+    {
+        text-decoration: none;
+    }
+    li a:visited
+    {
+        text-decoration: none;
+    }
+    li a:hover
+    {
+        text-decoration: none;
+    }
+    li a:active
+    {
+        text-decoration: none;
+    }
+    
+    nav a
+    {
+        color:white;
+    }
+    a {
+    color: black;
+    float: left;
+    text-decoration: none;
+    /*-webkit-tap-highlight-color: transparent;*/
+    }
+    br
+    {
+        background-color: green;
+    }
+    a
+    {
+        color:white;
+    }
+    #vftable,#apextable
+    {
+        margin-left: 13%;
+    }
+    
+
     </style>
+    
 </head>
 
 <body>
-    <div class="row">
-        <div class="col s12">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Logo</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
-                    </ul>
+    <div id ="row" class="row" class="col s12 m12 l12">
+        <div id="row1" class="col s12 m12 l12">
+            <nav id="nav" class="s12 m12 l12">
+                <div id="navwrapper" class="nav-wrapper">
+                    <!-- <a href="#" class="brand-logo"> --><h3>Weave Commands</h3><!-- </a> -->
+                    <!-- <a id="vfid" href="#apxid">Apex Commands<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"</i></a> -->
+
+                    <a id="vfid" href="#apxid">Apex Commands &nbsp;<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+</a>
+                   <!--  <ul id="nav-mobile" class="right hide-on-small-only">
+                        
+                        <li><a href="#apx">Apex Commands<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></li>
+                        
+                    </ul> -->
                 </div>
             </nav>
-            <div class="col s2"></div>
-            <div class="col s10 center-align">
-                <div class="col s2"></div>
-                <table class="responsive-table centered striped">
+            <div id="row2" class="col s2"></div>
+            <div id="row3" class="col s10 m10 l10 center-align">
+                <div id="row4" class="col s2"></div>
+                <h4 id="vf">VisualForce Commands</h4>
+                <table id="vftable" class="highlight">
                     <thead>
                         <tr>
-                            <th data-field="id">Name</th>
-                            <th data-field="name">Item Name</th>
-                            <th data-field="price">Item Price</th>
+                            <th  class="heading">Command</th>
+                            <th  class="heading">Purpose</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
+                            <td class="leftalign">vf_html</td>
+                            <td class="rightalign">Pure HTML no sidebar and related attributes on</td>
+                            
                         </tr>
                         <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
+                            <td class="leftalign">vf_standard</td>
+                            <td class="rightalign">Standard Controller (Press Tab to fill values)</td>
+                        
                         </tr>
                         <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
+                            <td class="leftalign">vf_custom</td>
+                            <td class="rightalign">Custom Controller (Press Tab to fill values)</td>
+                          
+                        </tr>
+                        <tr>
+                            <td class="leftalign">vf_jquery</td>
+                            <td class="rightalign">Standard Controller with Jquery (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">
+                                vf_bootstrap                
+                            </td>
+                            <td class="rightalign">Standard Controller with Twitter Bootstrap (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">vf_mdl</td>
+                            <td class="rightalign">Material Design CSS/JS imported (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">vf_mdl_fixedtabs</td>
+                            <td class="rightalign">Material Design Fixed Table Layout see here (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">vf_mdl_fixedwithHeader</td>
+                            <td class="rightalign">Material Design with Scrolling Header - see here (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">vf_includcss</td>
+                            <td class="rightalign">Snippet to include css from static resource (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">sf_html1by1</td>
+                            <td class="rightalign">Using ForceGrid, Generates Layout with one Grid(Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="leftalign">sf_html1by2</td>
+                            <td class="rightalign">Using ForceGrid, Generates Layout with two grids (Press Tab to fill values)</td>
                         </tr>
                     </tbody>
-                </table>
+
+                </table> <!-- table format layout -->
+
+                               
             </div>
         </div>
-        <div class="col s2"></div>
+        <div id="row5" class="col s2"></div>
+        <div id="row6" class="col s10 center-align">
+                <div id="row7" class="col s2"></div><br>
+                <a id="apxid" href="#vfid">VF Commands &nbsp;<i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i>
+</a>
+        <div><h4 id="apx">Apex Commands</h4>
+
+        <!-- <ul>
+        <li><a href="#vf">VF Commands<i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a></li> -->
+        </ul>
+        </div>
+        <!-- <li><a href="#vf">VF Commands<i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a></li> -->
+        <table id="apextable" class="highlight">
+                    <thead>
+                        <tr>
+                            <th  class="heading">Command</th>
+                            <th  class="heading">Purpose</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="leftalign">Class</td>
+                            <td class="rightalign">Create Class</td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="leftalign">Trigger</td>
+                            <td class="rightalign">Trigger Template (Press Tab to fill values)</td>
+                        
+                        </tr>
+                        <tr>
+                            <td class="leftalign">TriggerHandler</td>
+                            <td class="rightalign">TriggerHandler (Press Tab to fill values)</td>
+                          
+                        </tr>
+                        <tr>
+                            <td class="leftalign">forEach</td>
+                            <td class="rightalign">Create ForEach Loop (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">
+                                for </td>
+                            <td class="rightalign">Create For Loop (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">/*</td>
+                            <td class="rightalign">Create Comment Section (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">SOQLDynamic</td>
+                            <td class="rightalign">Create Dynamic SOQL Query (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">SOQL</td>
+                            <td class="rightalign">Create SOQL (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">List</td>
+                            <td class="rightalign">Create a List (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">Map</td>
+                            <td class="rightalign">Create a Map (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="leftalign">Set</td>
+                            <td class="rightalign">Create a Set (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">assert</td>
+                            <td class="rightalign">Creates an Assert Statement (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">testClass</td>
+                            <td class="rightalign">BoilerPlate for Test Class (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">ApexPage</td>
+                            <td class="rightalign">Template to get Page Parameter (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">Remote Insert</td>
+                            <td class="rightalign">Javascript Remote Object Template to insert Object (Press Tab to fill values)</td>
+                        </tr>
+                        <tr>
+                            <td class="leftalign">RemoteRetrieve</td>
+                            <td class="rightalign">Javascript Remote Object Template to retrive record for specific object (Press Tab to fill values)</td>
+                        </tr>
+                    </tbody>
+
+                </table>
     </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+        
+    
+    </script>
 </body>
 
 </html>
