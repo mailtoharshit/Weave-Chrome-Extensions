@@ -14,6 +14,14 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
       <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
     <style type="text/css">
+    *
+    {
+        box-sizing: border-box;
+    }
+    #row
+    {
+        width:100%;
+    }
     body {
     width: 800px;
     height: 600px;
@@ -38,26 +46,7 @@ li a
     {
         color:white;
     }
-    /*tr:hover
-    {
-        background-color: grey;
-        box-shadow: 0 27px 24px 0 rgba(0,0,0,0.8),0 40px 77px 0 rgba(0,0,0,0.22);
-    }*/
-   /* tr:hover td {
-    -moz-box-shadow: 0 4px 2px -3px blue inset;
-    -webkit-box-shadow: 0 4px 2px -3px blue inset;
-    box-shadow: 0 4px 2px -3px blue inset;
-}*/
-    /*tr:hover  {
-    -moz-box-shadow: 2px 4px 2px 0 rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 2px 4px 2px 0 rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 4px 2px 0 rgba(0, 0, 0, 2.8);
-    }*/
-    /*tr:hover td {
-    -moz-box-shadow: 0 8px 6px -6px grey;
-    -webkit-box-shadow: 0 8px 6px -6px grey;
-     box-shadow: 0 8px 6px -6px grey;
-    }*/
+    
     tr:hover td {
     -moz-box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.5) inset;
     -webkit-box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.5) inset;
@@ -163,11 +152,11 @@ li a
 </head>
 
 <body>
-    <div id ="row" class="row" class="col s12 m12 l12">
-        <div id="row1" class="col s12 m12 l12">
-            <nav id="nav" class="s12 m12 l12">
+    <div id ="row" class="row col s10 m12 l12">
+        <div id="row1" class="col s10 m12 l12">
+            <nav id="nav" class="s10 m12 l12">
                 <div id="navwrapper" class="nav-wrapper">
-                    <!-- <a href="#" class="brand-logo"> --><h3>Weave Commands</h3><!-- </a> -->
+                    <!-- <a href="#" class="brand-logo"> --><h3 id="title">Weave Commands</h3><!-- </a> -->
                     <!-- <a id="vfid" href="#apxid">Apex Commands<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"</i></a> -->
 
                     <a id="vfid" href="#apxid">Apex Commands &nbsp;<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
@@ -252,7 +241,7 @@ li a
         <div id="row5" class="col s2"></div>
         <div id="row6" class="col s10 center-align">
                 <div id="row7" class="col s2"></div><br>
-                <a id="apxid" href="#vfid">VF Commands &nbsp;<i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i>
+                <a id="apxid" href="#title">VF Commands &nbsp;<i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i>
 </a>
         <div><h4 id="apx">Apex Commands</h4>
 
@@ -295,7 +284,7 @@ li a
                             <td class="rightalign">Create For Loop (Press Tab to fill values)</td>
                         </tr>
                         <tr>
-                            <td class="leftalign">/*</td>
+                            <td class="leftalign">//</td>
                             <td class="rightalign">Create Comment Section (Press Tab to fill values)</td>
                         </tr>
                         <tr>
